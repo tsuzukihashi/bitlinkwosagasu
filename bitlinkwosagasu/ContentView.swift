@@ -1,24 +1,23 @@
-//
-//  ContentView.swift
-//  bitlinkwosagasu
-//
-//  Created by ryo.tsuzukihashi on 2024/08/23.
-//
-
+import Combine
 import SwiftUI
 
 struct ContentView: View {
+    @State var searcher = BitlinkSearcher()
+
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Text(searcher.lastDistance.displayName)
+                .font(.largeTitle)
+            Text(String(searcher.lastAccurancy ?? 0.0) + "m")
         }
-        .padding()
+        .onAppear() {
+            searcher.startScanning()
+        }
     }
 }
 
-#Preview {
-    ContentView()
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
 }

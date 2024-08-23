@@ -14,6 +14,8 @@
 		2E226BA52C78661400B1EB7D /* bitlinkwosagasuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E226BA42C78661400B1EB7D /* bitlinkwosagasuTests.swift */; };
 		2E226BAF2C78661400B1EB7D /* bitlinkwosagasuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E226BAE2C78661400B1EB7D /* bitlinkwosagasuUITests.swift */; };
 		2E226BB12C78661400B1EB7D /* bitlinkwosagasuUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E226BB02C78661400B1EB7D /* bitlinkwosagasuUITestsLaunchTests.swift */; };
+		2E226BC12C78CA6300B1EB7D /* BitlinkSearcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E226BC02C78CA6300B1EB7D /* BitlinkSearcher.swift */; };
+		2E226BC32C78CD2800B1EB7D /* CLProximityExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E226BC22C78CD2800B1EB7D /* CLProximityExt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,9 @@
 		2E226BAA2C78661400B1EB7D /* bitlinkwosagasuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bitlinkwosagasuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E226BAE2C78661400B1EB7D /* bitlinkwosagasuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bitlinkwosagasuUITests.swift; sourceTree = "<group>"; };
 		2E226BB02C78661400B1EB7D /* bitlinkwosagasuUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bitlinkwosagasuUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2E226BBD2C78665100B1EB7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		2E226BC02C78CA6300B1EB7D /* BitlinkSearcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitlinkSearcher.swift; sourceTree = "<group>"; };
+		2E226BC22C78CD2800B1EB7D /* CLProximityExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLProximityExt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +100,11 @@
 		2E226B912C78661300B1EB7D /* bitlinkwosagasu */ = {
 			isa = PBXGroup;
 			children = (
+				2E226BBD2C78665100B1EB7D /* Info.plist */,
 				2E226B922C78661300B1EB7D /* bitlinkwosagasuApp.swift */,
 				2E226B942C78661300B1EB7D /* ContentView.swift */,
+				2E226BC02C78CA6300B1EB7D /* BitlinkSearcher.swift */,
+				2E226BC22C78CD2800B1EB7D /* CLProximityExt.swift */,
 				2E226B962C78661400B1EB7D /* Assets.xcassets */,
 				2E226B982C78661400B1EB7D /* bitlinkwosagasu.entitlements */,
 				2E226B992C78661400B1EB7D /* Preview Content */,
@@ -259,8 +267,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E226BC32C78CD2800B1EB7D /* CLProximityExt.swift in Sources */,
 				2E226B952C78661300B1EB7D /* ContentView.swift in Sources */,
 				2E226B932C78661300B1EB7D /* bitlinkwosagasuApp.swift in Sources */,
+				2E226BC12C78CA6300B1EB7D /* BitlinkSearcher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +434,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = bitlinkwosagasu/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -462,6 +474,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = bitlinkwosagasu/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
